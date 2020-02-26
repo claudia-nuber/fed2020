@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert('Hello World');
+        var greeting='Hello World';
+        console.log(greeting);
+
+        var age=31;
+        console.log(age);
+        console.log(`My age is ${age}`);
+        /* var century=100;
+        var time=century-age;
+        console.log('I will be ' + century + ' in' + time + 'years.');
+        console.log(`I will be ${century} in ${time} years.`)*/
+
+        showAgeNextCentury(age);
+        showAgeNextCentury(31);
+        showAgeNextCentury(70);
+
+        function showAgeNextCentury(someage) {
+            var century=100;
+            var time=century-someage;
+            console.log(`I will be ${century} in ${time} years.`)
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
