@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/site.js"></script>
+    <title>Document</title>
+</head>
+
+<body onload="initPage()">
+    <h1>Interactive</h1>
+    <p id="loadMessage">????</p>
+
+    <button onclick="btnPushMessage()">Push a Message</button>
+    <br><br>
+    <button onclick="btnPushNewDate()">Push the button to see the date</button>
+    <p id="demo"></p>
+    <button onclick="btnPushDate()">Push the button to see the date and time</button>
+
+    <hr>
+    Enter Your Age: &nbsp;<input type="text" id="tbAge">
+    <br><br>
+    <button onclick="btnGetAge()">Get Age</button>
+    <p id="ageMessage">???</p>
+
+    <hr>
+    Enter a number: &nbsp;<input type="text" id="number1" name="text1" value="">
+    Enter a number: &nbsp;<input type="text" id="number2" name="text2" value="">
+    <br><br>
+    <button onclick="getSum()">Show me the sum of the numbers</button>
+    <p id="sumMessage">???</p>
+
+    <hr>
+    Enter Your Age: &nbsp;<input type="text" id="myAge">
+    <br><br>
+    <button onclick="btnInsertAge()">Try it</button>
+    <p id="ageMessagge">???</p>
+
+    <hr>
+    
+    Enter temperature: &nbsp;<input type="text" id="tbTemp">
+    <br><br>
+    <button onclick="btnConvertTemp ()">Get Temperature</button>
+    <p id="convertMessage">???</p>
+
+    <h1>Temperature</h1>
+    Enter temperature: &nbsp;<input type="text" id="tbTemp">
+    <br><br>
+    <button onclick="btnConvertTemp ()">Convert</button>
+    <p id="convertMessage">???</p>
+
+    <select id="selectConversion" onchange="selectConversion()">
+    <option value="1">Fahrenheit</option>
+    <option value="2">Celsius</option>
+    </select>
+
+
+</body>
+
+</html>
