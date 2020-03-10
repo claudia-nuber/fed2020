@@ -13,6 +13,24 @@ function populateList() {
 
     htmlString += `</ol>`
 
-    document.getElementById("messagePanel").innerHTML = htmlString;
+    document.getElementById("messagePanel2").innerHTML = htmlString;
 
+}
+
+function makeAList () {
+    let daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    let htmlTag = `<ol>`;
+
+    for (i=0; i<daysOfTheWeek.length; i++) {
+        console.log(htmlTag);
+        htmlTag += `<li>${daysOfTheWeek[i]}</li>`;
+    }
+    htmlTag += `</ol>`
+
+    document.getElementById("messagePanel1").innerHTML = htmlTag;
+}
+
+function initFunctions(){
+    populateList();
+    makeAList();
 }
